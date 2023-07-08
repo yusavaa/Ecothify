@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="825.0" styleClass="subColor" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="activity.EditActivityController">
+   <children>
+      <TextField fx:id="nameField" layoutX="323.0" layoutY="119.0" prefHeight="40.0" prefWidth="220.0" promptText="e.g. Reforestation" styleClass="inputForm">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="323.0" layoutY="89.0" text="Activity Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="locField" layoutX="323.0" layoutY="218.0" prefHeight="40.0" prefWidth="220.0" styleClass="inputForm">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ChoiceBox>
+      <Label layoutX="323.0" layoutY="190.0" text="Location">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descField" layoutX="323.0" layoutY="318.0" prefHeight="40.0" prefWidth="220.0" promptText="e.g. Let's Join Us" styleClass="inputForm">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextArea>
+      <Label layoutX="323.0" layoutY="288.0" text="Description">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="capacityField" disable="true" layoutX="604.0" layoutY="119.0" prefHeight="40.0" prefWidth="115.0" promptText="e.g. 5" styleClass="inputForm">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="605.0" layoutY="89.0" text="Max Participant">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateField" layoutX="604.0" layoutY="218.0" prefHeight="40.0" prefWidth="115.0" promptText="Enter a date" styleClass="inputForm">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <Label layoutX="605.0" layoutY="189.0" text="Scheduled on">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="89.0" text="Thumbnail">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" layoutX="19.0" layoutY="121.0" prefHeight="135.0" prefWidth="240.0" style="-fx-border-color: #155E63; -fx-border-width: 2px; -fx-background-color: white;">
+         <children>
+            <ImageView fx:id="thumbnail" fitHeight="135.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Button layoutX="178.0" layoutY="88.0" mnemonicParsing="false" onAction="#fileChooser" text="Choose File">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="19.0" layoutY="265.0" text="*recomendation 16:9 ratio" />
+      <Button layoutX="673.0" layoutY="493.0" mnemonicParsing="false" onAction="#saveAction" prefHeight="30.0" prefWidth="120.0" text="Save Changes">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="580.0" layoutY="493.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="30.0" prefWidth="70.0" style="-fx-border-style: solid; -fx-border-color: #155E63; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-text-fill: #155E63;" styleClass="subColor" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="17.0" layoutY="16.0" style="-fx-font-size: 16px;" styleClass="mainFont" text="Edit Activity" />
+      <Button layoutX="29.0" layoutY="493.0" mnemonicParsing="false" onAction="#deleteAction" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #EA5455;" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Line endX="684.2000122070312" endY="7.62939453125E-6" layoutX="125.0" layoutY="53.0" startX="-110.40000915527344" startY="7.62939453125E-6" style="-fx-opacity: 15%;" />
+   </children>
+</AnchorPane>

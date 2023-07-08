@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="825.0" styleClass="subColor" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardController">
+   <children>
+      <Label layoutX="22.0" layoutY="17.0" style="-fx-font-size: 16px;" styleClass="mainFont" text="Dashboard" />
+      <Line endX="684.2000122070312" endY="7.62939453125E-6" layoutX="125.0" layoutY="51.0" startX="-110.40000915527344" startY="7.62939453125E-6" style="-fx-opacity: 15%;" />
+      <VBox alignment="CENTER" layoutX="21.0" layoutY="195.0" prefHeight="335.0" prefWidth="515.0" style="-fx-background-color: #fffef6;">
+         <children>
+            <Label style="-fx-font-size: 13px;" styleClass="mainFont" text="Popular Activity Locations [Weekly]">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <PieChart fx:id="pieChart" prefHeight="275.0" prefWidth="515.0" style="-fx-font-size: 12px;" styleClass="mainFont" />
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="557.0" layoutY="73.0" prefHeight="460.0" prefWidth="246.0" styleClass="card">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="100.0">
+               <children>
+                  <Label style="-fx-font-size: 13px;" styleClass="mainFont" text="- Your Point -">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="70.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="accountImg" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="55.0" prefWidth="145.0">
+                           <children>
+                              <Label fx:id="nameLabel" styleClass="mainFont" text="Guest Account">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="pointLabel" text="Log in first">
+                                 <VBox.margin>
+                                    <Insets top="7.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label style="-fx-font-size: 13px;" styleClass="mainFont" text="- Top Contributor -">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="top1Img" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="55.0" prefWidth="145.0">
+                     <children>
+                        <Label styleClass="mainFont" text="Naufal Rafi">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="320 Points">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="top2Img" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="55.0" prefWidth="145.0">
+                     <children>
+                        <Label styleClass="mainFont" text="Adin Abimanyu">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="290 Points">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="top3Img" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="55.0" prefWidth="145.0">
+                     <children>
+                        <Label styleClass="mainFont" text="Rafi Cantas">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="240 Points">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="70.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="top4Img" fitHeight="55.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <VBox prefHeight="55.0" prefWidth="145.0">
+                     <children>
+                        <Label styleClass="mainFont" text="Fath Yusava">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="210 Points">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+      <VBox alignment="TOP_CENTER" layoutX="360.0" layoutY="73.0" prefHeight="100.0" prefWidth="175.0" styleClass="card">
+         <children>
+            <Label style="-fx-font-size: 13px;" styleClass="mainFont" text="- Active Users -" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="activeUsersLabel" style="-fx-font-size: 15px;" text="Total">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="21.0" layoutY="73.0" prefHeight="100.0" prefWidth="320.0" styleClass="card">
+         <children>
+            <ImageView fx:id="heroImg" fitHeight="92.0" fitWidth="320.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

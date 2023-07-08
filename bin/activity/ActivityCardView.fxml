@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="145.0" prefWidth="790.0" styleClass="card" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="activity.ActivityCardController">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="135.0" prefWidth="240.0" style="-fx-background-radius: 10px;" HBox.hgrow="NEVER">
+         <children>
+            <ImageView fx:id="thumbnail" fitHeight="135.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+         <HBox.margin>
+            <Insets left="5.0" />
+         </HBox.margin>
+      </VBox>
+      <VBox prefHeight="145.0" prefWidth="420.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="tittleLabel" prefHeight="15.0" prefWidth="201.0" styleClass="mainFont" text="Tittle">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="dateLabel" prefHeight="15.0" prefWidth="130.0" styleClass="mainFont" text="Date">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="locLabel" prefHeight="15.0" prefWidth="201.0" styleClass="mainFont" text="Location">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="slotLabel" prefHeight="15.0" prefWidth="130.0" styleClass="mainFont" text="Max Participant:">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="60.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="descLabel" prefHeight="15.0" prefWidth="365.0" styleClass="mainFont" text="Description">
+               <VBox.margin>
+                  <Insets left="25.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox fx:id="buttonLayout" alignment="CENTER" prefHeight="170.0" prefWidth="125.0">
+         <children>
+            <VBox fx:id="aproveLayout" alignment="BOTTOM_CENTER" prefHeight="30.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <VBox fx:id="buttonLayout" alignment="CENTER" prefHeight="30.0" prefWidth="100.0" />
+            <VBox fx:id="declineLayout" alignment="TOP_CENTER" prefHeight="30.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</HBox>

@@ -1,0 +1,73 @@
+.mainFont {
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+}
+
+.subFont {
+    -fx-font-family: sans-serif;
+}
+
+.inputForm {
+    -fx-background-color: #fffef6;
+    -fx-border-width: 0px 0px 2px;
+    -fx-border-color: #155E63;
+}
+
+.text-area .content {
+    -fx-background-color: #fffef6;
+}
+
+.date-picker .text-field {
+    -fx-background-color: #fffef6;
+}
+
+.button {
+    -fx-font-weight: bold;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #155E63;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-font-weight: bold;
+    -fx-font-family: sans-serif;
+    -fx-background-color: #21747a;
+    -fx-text-fill: white;
+}
+
+.asGuest {
+    -fx-background-color: #F9F8EB;
+    -fx-border-style: solid;
+    -fx-border-color: #155E63;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-text-fill: #155E63;
+}
+
+.subButton {
+    -fx-font-weight: bold;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: #155E63;
+    -fx-background-color: #F9F8EB;
+}
+
+.subButton:hover {
+    -fx-font-weight: bold;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: #155E63;
+    -fx-background-color: #ffffff;
+}
+
+.card {
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropShadow(three-pass-box, rgba(0, 0, 0, 0.1), 5, 0, 0, 0);
+}
+
+.mainColor {
+    -fx-background-color: #155E63;
+}
+
+.subColor {
+    -fx-background-color: #F9F8EB;
+}

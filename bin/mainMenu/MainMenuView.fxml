@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@../css/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainMenu.MainMenuController">
+   <left>
+      <VBox alignment="CENTER" prefHeight="600.0" prefWidth="175.0" styleClass="mainColor" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#dashboardAction" prefHeight="40.0" prefWidth="100.0" styleClass="subButton" text="Dashboard">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button mnemonicParsing="false" onAction="#showActivityAction" prefHeight="40.0" prefWidth="100.0" styleClass="subButton" text="Activity">
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#scheduleAction" prefHeight="40.0" prefWidth="100.0" styleClass="subButton" text="Schedule">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="100.0">
+               <VBox.margin>
+                  <Insets top="22.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="verifyButton" mnemonicParsing="false" onAction="#verifyAction" prefHeight="40.0" prefWidth="100.0" styleClass="subButton" text="Verify">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="50.0" prefWidth="825.0" styleClass="mainColor" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="175.0">
+               <children>
+                  <Label style="-fx-text-fill: white;" text="Ecothify">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="825.0">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="50.0" prefWidth="690.0">
+                     <children>
+                        <Label fx:id="welcomeLabel" style="-fx-text-fill: white; -fx-font-size: 14px;" styleClass="mainFont" text="Welcome,  ">
+                           <HBox.margin>
+                              <Insets bottom="12.0" left="20.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logoutAction" prefWidth="57.0" styleClass="subButton" text="Logout">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" prefWidth="57.0" styleClass="subButton" text="Login">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
