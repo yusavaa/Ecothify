@@ -1,18 +1,11 @@
-## Getting Started
+## Apa itu Ecothify?
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Ecothify adalah aplikasi yang dikembangkan untuk meningkatkan kepedulian masyarakat terjadap lingkungan. Aplikasi ini memudahkan masyarakat untuk menemukan bahkan membuat suatu kegiatan ataupun komunitas peduli lingkungan, diterapkannya sistem point yang dapat ditukar suatu hadiah dan peringkat pada aplikasi ini diharap dapat meningkatkan jiwa kompetitif masyarakat untuk berlomba-lomba peduli terhadap lingkungan sekitar.
 
-## Folder Structure
+## Fitur Utama Ecothify:
+1. Create Actifity, fitur ini memungkinkan pengguna yang terdaftar untuk membuat suatu kegiatan untuk aksi peduli lingkungan.
+2. Join Activity, fitur ini memungkinkan pengguna yang terdaftar untuk berpartisipasi dalam suatu kegiatan yang telah dibuat oleh pengguna lain.
+3. My Schedule, fitur ini dibuat untuk mengingatkan pengguna terhadap kapan kegiatan yang diikuti pengguna dilaksanakan.
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Fitur Khusus Admin:
+1. Verify Activity, fitur ini memungkinkan admin untuk memeriksa dan memverifikasi detil suatu kegiatan yang telah dibuat oleh pengguna lain sebelum resmi ditampilkan pada aplikasi.
