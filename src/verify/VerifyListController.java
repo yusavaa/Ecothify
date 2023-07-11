@@ -27,6 +27,7 @@ public class VerifyListController implements Initializable {
     @FXML
     private Label totalLabel, verifiedLabel, unverifiedLabel;
 
+    // Make card from each activity in the database
     public void showActivity(int index, String purpose) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader();
         fxmlLoader.setLocation(getClass().getResource("/activity/ActivityCardView.fxml"));
@@ -53,6 +54,7 @@ public class VerifyListController implements Initializable {
         cardLayout.getChildren().add(cardBox);
     }
 
+    // Display activity card in "Activity and Verify"
     public void showList(boolean validated, String purpose) {
         try {
             for (int i = 0; i < activityList.getActivityList().size(); i++) {

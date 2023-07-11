@@ -6,23 +6,18 @@ import java.util.ResourceBundle;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-import activity.ActivityCardController;
 import model.AccountList;
-import model.ActivityList;
 import util.OpenScene;
 
 public class MainMenuController implements Initializable {
 
     private OpenScene openScene = new OpenScene();
-    private ActivityList activity = new ActivityList();
     private static MainMenuController instance;
 
     @FXML
@@ -49,6 +44,10 @@ public class MainMenuController implements Initializable {
         mainPane.setCenter(openScene.getPane("/dashboard/DashboardView.fxml"));
     }
 
+    public void showActivityAction() {
+        mainPane.setCenter(openScene.getPane("/activity/ActivityListView.fxml"));
+    }
+
     public void addActivityAction() {
         mainPane.setCenter(openScene.getPane("/activity/AddActivityView.fxml"));
     }
@@ -67,11 +66,7 @@ public class MainMenuController implements Initializable {
 
     public void verifyAction() {
         mainPane.setCenter(openScene.getPane("/verify/VerifyListView.fxml"));
-    }
-
-    public void showActivityAction() {
-        mainPane.setCenter(openScene.getPane("/activity/ActivityListView.fxml"));
-    }
+    } 
 
     public void loginAction(ActionEvent event) throws IOException {
         openScene.getStage(event, "/login/LoginView.fxml");
@@ -80,20 +75,6 @@ public class MainMenuController implements Initializable {
     public void logoutAction(ActionEvent event) throws IOException {
         AccountList.setLoginAccount(null);
         openScene.getStage(event, "/mainMenu/MainMenuView.fxml");
-    }
-
-    public void showActivity(int index) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader();
-        fxmlLoader.setLocation(getClass().getResource("/activity/ActivityCardView.fxml"));
-        HBox cardBox = fxmlLoader.load();
-        ActivityCardController cardController = fxmlLoader.getController();
-        cardController.setLabel(
-                activity.getActivity(index).getName(),
-                activity.getActivity(index).getDate(),
-                activity.getActivity(index).getDescription(),
-                activity.getActivity(index).getLocation(),
-                String.valueOf(activity.getActivity(index).getParticipantLenght()));
-        cardLayout.getChildren().add(cardBox);
     }
 
     public void checkLogin() {

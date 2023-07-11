@@ -22,7 +22,7 @@ public class ActivityListController extends VerifyListController {
         if (AccountList.getLoginAccount() != null) {
             MainMenuController.getInstance().addActivityAction();
         } else {
-            PopUpAlert.information("Guest", "Untuk membuat kegiatan, silakan login terlebih dahulu.");
+            PopUpAlert.information("Guest", "To create an activity, please login first.");
             MainMenuController.getInstance().loginAction(event);
         }
     }

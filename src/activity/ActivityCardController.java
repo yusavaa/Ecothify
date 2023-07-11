@@ -110,7 +110,7 @@ public class ActivityCardController {
 
     public void checkLogin(ActionEvent event) throws IOException {
         if (AccountList.getLoginAccount() == null) {
-            PopUpAlert.information("Guest", "Untuk bergabung dalam kegiatan, silakan login terlebih dahulu.");
+            PopUpAlert.information("Guest", "Please login first.");
             MainMenuController.getInstance().loginAction(event);
         }
     }

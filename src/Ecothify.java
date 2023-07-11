@@ -23,6 +23,7 @@ public class Ecothify extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("login/LoginView.fxml"));
         Scene scene = new Scene(root);
+        stage.setTitle("Ecothify");
         stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
